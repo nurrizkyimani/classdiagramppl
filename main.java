@@ -105,7 +105,7 @@ class main {
   }
 
 
-  class Pencari extends Question {
+  class Pencari extends Answer {
     String question_id_pencari  = question_id;
 
     Pencari(String question_id){
@@ -123,7 +123,7 @@ class main {
 
   }
 
-  class Answer {
+  class Answer extends Question{
     String answer_id;
     String answer ;
 
@@ -150,7 +150,7 @@ class main {
 
   }
 
-  class Question {
+  class Question  extends Topic{
     String question_id;
     String question ;
 
@@ -206,7 +206,7 @@ class main {
   }
 
 
-  class Course {
+  class Course extends Topic{
     String course_id; 
     String course_name;
     String lastUpdate; 
@@ -257,19 +257,6 @@ class main {
     }
   }
 
-
-
-
-
-
-
-  
-
-
-
-  public static void main(String[] args) {
-    
-  }
     
   
 }
